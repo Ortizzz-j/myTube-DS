@@ -18,15 +18,34 @@
 
     <h1>Add a New Video</h1>
     <br><br>
-    <div>
-        <iframe width="280" height="157.5" src="https://www.youtube.com/embed/22exovj9apo?si=xMmxbtZrg1z7M0S5"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+    <form action="GET" action="#">
+        <label for="vidTitle"><strong>Video Title</strong></label>
         <br>
-        <a href="./videos/video1.html">
-            Father Spyridon from collection 1
-        </a>
-    </div>
+        <input name="vidTitle" id="vidTitle" type="text" placeholder="Video Title" required>
+        <br><br>
+        <label for="Desc"><strong>Description</strong></label>
+        <br>
+        <textarea name="Desc" id="Desc" type="text" cols="25" rows="8" required> </textarea>
+        <br><br>
+        <label for="upload"><strong>Video</strong></label>
+        <br>
+        <input name="upload" id="upload" type="file" title=" " value=" " required/>
+        <br><br>
+        <select name="collection" id="collection" required>
+            <option value="">Choose Collection</option>
+            <option value="col1">Collection 1</option>
+            <option value="col2">Collection 2</option>
+            <option value="col3">Collection 3</option>
+        </select>
+        <br><br>
+        <input name="upload" id="public" type="radio"> Public
+        <input name="upload" id="private" type="radio"> Private
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="submit">Upload Video</button>
+    </form>
 
 
     <footer>
