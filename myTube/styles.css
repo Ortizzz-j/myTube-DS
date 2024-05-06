@@ -11,13 +11,6 @@
     color: white;
 }
 
-iframe{
-    width: 450px;
-    height: 280px;
-    border: rgb(20, 179, 179) 8px inset;
-    margin: 10px;
-}
-
 #navbar {
     display: flex;
     font-size: 24px;
@@ -58,6 +51,45 @@ h1 {
     text-align: center;
 }
 
+#videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.video, a {
+    color: white;
+}
+
+.video-paragraph {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home-page-vids{
+    width: 450px;
+    height: 280px;
+    border: rgb(20, 179, 179) 8px inset;
+    margin: 10px;
+}
+.video {
+    box-sizing: border-box;
+    margin: 2rem;
+    width: 350px;
+    height: 225px;
+    border: rgb(20, 179, 179) 8px inset;
+    text-align: center;
+    align-content: space-around;
+}
+.vids-file-iframe{
+    width: 560px;
+    height: 315px;
+    border: rgb(20, 179, 179) 8px inset;
+    margin: 10px;
+}
+
 #form-shell {
     display: flex;
     justify-content: center;
@@ -72,6 +104,13 @@ h1 {
 strong {
     box-sizing: border-box;
     font-size: 1.2rem;
+}
+
+#vid-description {
+    color: var(--text-color);
+    font-size: larger;
+    padding: 12px;
+    width: 68%;
 }
 
 .input-box {
