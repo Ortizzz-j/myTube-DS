@@ -6,47 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myTube</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./collection/collection1.html">Collection 1</a>
-        <a href="./collection/collection2.html">Collection 2</a>
-        <a href="./collection/collection3.html">Collection 3</a>
+    <nav id="navbar">
+        <a class="link" href="./index.html">Home</a>
+        <a class="link" href="./collection/collection1.html">Collection 1</a>
+        <a class="link" href="./collection/collection2.html">Collection 2</a>
+        <a class="link right-space" href="./collection/collection3.html">Collection 3</a>
     </nav>
 
     <h1>Add a New Video</h1>
     <br><br>
-    <form action="GET" action="#">
-        <label for="vidTitle"><strong>Video Title</strong></label>
-        <br>
-        <input name="vidTitle" id="vidTitle" type="text" placeholder="Video Title" required>
-        <br><br>
-        <label for="Desc"><strong>Description</strong></label>
-        <br>
-        <textarea name="Desc" id="Desc" type="text" cols="25" rows="8" required> </textarea>
-        <br><br>
-        <label for="upload"><strong>Video</strong></label>
-        <br>
-        <input name="upload" id="upload" type="file" title=" " value=" " required/>
-        <br><br>
-        <select name="collection" id="collection" required>
-            <option value="">Choose Collection</option>
-            <option value="col1">Collection 1</option>
-            <option value="col2">Collection 2</option>
-            <option value="col3">Collection 3</option>
-        </select>
-        <br><br>
-        <input name="priPub" id="public" type="radio"><label for="public">Public</label>
-        <input name="priPub" id="private" type="radio"><label for="private">Private</label>
-        <br>
-        <br>
-        <br>
-        <br>
-        <button type="submit">Upload Video</button>
-    </form>
-
+    <div id="form-shell">
+        <form class="form" action="GET" action="#">
+            <label class="label" for="vidTitle"><strong>Video Title</strong></label>
+            <br>
+            <input name="vidTitle" id="vidTitle" class="input-box" type="text" placeholder="Video Title" required>
+            <br><br>
+            <label class="label" for="Desc"><strong>Description</strong></label>
+            <br>
+            <textarea name="Desc" id="Desc" class="input-box" type="text" cols="25" rows="8" required> </textarea>
+            <br><br>
+            <label class="label" for="upload"><strong>Video</strong></label>
+            <br>
+            <input name="upload" id="upload" type="file" title=" " value=" " required />
+            <br><br>
+            <select name="collection" id="collection" class="input-box" required>
+                <option value="">Choose Collection</option>
+                <option value="col1">Collection 1</option>
+                <option value="col2">Collection 2</option>
+                <option value="col3">Collection 3</option>
+            </select>
+            <br><br>
+            <input name="priPub" id="public" class="radio" type="radio"><label for="public">Public</label>
+            <input name="priPub" id="private" class="radio" type="radio"><label for="private">Private</label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button type="submit">Upload Video</button>
+        </form>
+    </div>
     <hr>
     <footer>
         &copy Blah Blah Blah

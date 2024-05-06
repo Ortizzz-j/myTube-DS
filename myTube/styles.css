@@ -1,0 +1,139 @@
+:root {
+    --text-color: white;
+    --input-color: #FFFFF0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    background-color: rgb(27, 43, 43);
+    color: white;
+}
+
+iframe{
+    width: 450px;
+    height: 280px;
+    border: rgb(20, 179, 179) 8px inset;
+    margin: 10px;
+}
+
+#navbar {
+    display: flex;
+    font-size: 24px;
+    justify-content: flex-end;
+    width: 45%;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+a.link {
+    color: white;
+    margin-left: 1.5rem;
+}
+
+a.right-space {
+    margin-right: .40rem;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightskyblue
+}
+
+h1 {
+    font-size: 2.5rem;
+    width: 50%;
+    display: flex;
+    color: white;
+    margin: auto;
+    justify-content: center;
+    text-shadow: #FC0 1px 0 10px;
+    text-align: center;
+}
+
+#form-shell {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+}
+
+.form {
+    text-align: center;
+}
+
+strong {
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+.input-box {
+    background-color: var(--input-color);
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#Desc{
+    border-radius: 12px;
+}
+
+#collection{
+    background-color: var(--input-color);
+    width: 77%;
+    margin: 15px 0 15px 0;
+}
+
+#upload{
+    justify-content: flex-end;
+    margin: 15px 0 0 0;
+}
+
+.radio{
+    font-weight: bold;
+    margin: 10px;
+}
+
+input[type="radio"]{
+    accent-color: red;
+}
+
+button{
+    background-color: var(--input-color);
+    color: black;
+    width: 120px;
+    height: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+
+.home-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: larger;
+    padding: 12px;
+    margin: auto;
+    width: 77%;
+}
+
+.home-video-square {
+    text-align: center;
+}
+
+hr {
+    border: none;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}

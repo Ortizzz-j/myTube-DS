@@ -1,0 +1,72 @@
+:root {
+    --text-color: white;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: rgb(27, 43, 43);
+    text-decoration: none;
+}
+
+#navbar {
+    display: flex;
+    font-size: 24px;
+    justify-content: flex-end;
+    width: 45%;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+a.link {
+    color: white;
+    margin-left: 1.5rem;
+}
+
+a.right-space {
+    margin-right: .40rem;
+}
+
+a, a:hover, a:active, a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    color:lightskyblue
+}
+
+h1 {
+    font-size: 2.5rem;
+    width: 50%;
+    display: flex;
+    color: white;
+    margin: auto;
+    justify-content: center;
+    text-shadow: #FC0 1px 0 10px;
+    text-align: center;
+}
+.video-paragraph {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+iframe{
+    width: 560px;
+    height: 315px;
+    border: rgb(20, 179, 179) 8px inset;
+    margin: 10px;
+}
+#vid-description {
+    color: var(--text-color);
+    font-size: larger;
+    padding: 12px;
+    width: 68%;
+}
+hr{
+    border: none;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
